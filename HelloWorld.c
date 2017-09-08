@@ -44,8 +44,8 @@ int main(int argc, char **argv) {
 
 	pthread_create(&tid, &attr, sum_runner, &num);
 	
-	printf("%lld times two = %d\n", num, TimesTwo(num));
-	printf("Factorial of %lld = %d\n", num, Factorial(num));
+	printf("%lld times two = %lld\n", num, TimesTwo(num));
+	printf("Factorial of %lld = %lld\n", num, Factorial(num));
 	
 	//Wait until thread is done it's work
 	pthread_join(tid, NULL);
